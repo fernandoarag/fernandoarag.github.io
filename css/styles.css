@@ -54,7 +54,7 @@ html {
 }
 
 .box-1_container.right {
-  background: black url(/_assets/box-1_container-right.svg) no-repeat;
+  background: black url(https://fernandoarag.github.io/assets/box-1_container-right.svg) no-repeat;
   background-size: contain;
   grid-column-start: 4;
   grid-column-end: 13;
@@ -152,7 +152,7 @@ html {
 /*                               BOX 3                              */
 /********************************************************************/
 .box-3_background {
-  background: black url(/_assets/box-3_background-prancheta.svg);
+  background: black url(https://fernandoarag.github.io/assets/box-3_background-prancheta.svg);
   background-size: 100% auto;
 }
 .box-3.page-center {
