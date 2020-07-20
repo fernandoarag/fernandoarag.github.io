@@ -60,7 +60,7 @@ html {
   grid-template-rows: 1fr 1fr 1fr;
 
   min-height: 500px;
-  background: black;
+  background: transparent;
 }
 
 .box-1_menu,
