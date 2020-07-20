@@ -104,7 +104,8 @@ html {
 .box-1_text .box-1_cta button {
   background-color: transparent;
   color: #ed1c24;
-  border: 2px solid transparent;
+  border-style: solid;
+  border-width: 2px;
   -moz-border-image: -moz-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   border-image: linear-gradient(to right, #ed1c24 0%, #f7931e 100%);
