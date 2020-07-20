@@ -54,12 +54,20 @@ html {
 }
 
 .box-1_container.right {
-  background: black url(https://fernandoarag.github.io/assets/box-1_container-right.svg) no-repeat;
-  background-size: contain;
   grid-column-start: 4;
   grid-column-end: 13;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+
+  min-height: 500px;
+  background: black;
+}
+
+.box-1_menu,
+.box-1_text,
+.box-1_cta,
+.box-1_container_mobile {
+  z-index: 2;
 }
 
 .box-1_menu {
@@ -153,8 +161,11 @@ html {
 /*                               BOX 3                              */
 /********************************************************************/
 .box-3_background {
-  background: black url(https://fernandoarag.github.io/assets/box-3_background-prancheta.svg);
-  background-size: 100% auto;
+  /* background: black url(/_assets/img-text.svg);
+  background-size: contain;
+  background-attachment: fixed; */
+  min-height: 500px;
+  background: transparent;
 }
 .box-3.page-center {
   max-width: 1200px;
@@ -163,6 +174,7 @@ html {
   color: white;
 
   padding: 150px 0px 150px 0px;
+  z-index: 2;
 }
 
 .box-3_flex-module_container {
@@ -276,7 +288,7 @@ html {
 .box-black {
   content: '';
   position: absolute;
-  height: 300px;
+  min-height: 300px;
   background: black;
   left: 0;
   bottom: 0;
@@ -353,8 +365,7 @@ input::-webkit-input-placeholder {
 input[type='submit'] {
   background-color: transparent;
   color: #ed1c24;
-  border-width: 3px;
-  border-style: solid;
+  border: 3px solid transparent;
   -moz-border-image: -moz-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   border-image: linear-gradient(to right, #ed1c24 0%, #f7931e 100%);
