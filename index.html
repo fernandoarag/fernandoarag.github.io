@@ -282,33 +282,35 @@
         <div class="box-5_container right">
           <div class="box-5_container-form">
 
-            /*<?php 
+            <!--
+            <?php 
               if ($_POST) 
               {
                 //Carrega as classes do PHPMailer
-                include("https://fernandoarag.github.io/phpmailer/class.phpmailer.php"); 
-                include("https://fernandoarag.github.io/phpmailer/class.smtp.php"); 
+                include("phpmailer/class.phpmailer.php"); 
+                include("phpmailer/class.smtp.php"); 
                 
                 //envia o e-mail para o visitante do site
                 $mailDestino = $_POST['txtEmail']; 
                 $nome = $_POST['txtNome'];	
                 $mensagem = "Obrigado pelo seu contato, responderemos ASAP!";
                 $assunto = "Obrigado pelo seu contato!";
-                include("https://fernandoarag.github.io/phpmailer/envio.php");
+                include("phpmailer/envio.php");
                 
                 //envia o e-mail para o administrador do site
-                $mailDestino = 'fernandorag.fullstackdeveloper@gmail.com'; 
+                $mailDestino = ''; //EMAIL DE ENVIO 
                 $nome = 'Contato - Site';	
                 $assunto = "Mensagem - Formulário do Site";
                 $mensagem = "Recebemos uma mensagem no site <br/>
                       <strong>Nome:</strong> $_POST[txtNome]<br/>
                       <strong>e-mail:</strong> $_POST[txtEmail]<br/>
                       <strong>mensagem:</strong> $_POST[txtMensagem]";
-                include("https://fernandoarag.github.io/phpmailer/envio.php");
+                include("phpmailer/envio.php");
                 
                 
               }
-            ?>*/
+            ?>
+            -->
 
             <form name="contact_form" class='box-5_form' method="POST">
               
