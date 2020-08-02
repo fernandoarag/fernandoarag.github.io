@@ -138,6 +138,8 @@ html {
 }
 
 .box-2_img {
+  padding-top: 150px;
+  padding-left: 80px;
 }
 .box-2_img img {
   min-width: 400px;
