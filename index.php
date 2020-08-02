@@ -6,13 +6,14 @@
     <title>Fernando Aragão - Desenvolvedor Full Stack</title>
     <!-- IMPORTANTO A FOLHA DE ESTILOS -->
     <link rel="stylesheet" href="_css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap">
     <!-- IMPORTANTO A FONTE -->
     <link
       href="https://fernandoarag.github.io/css/styles.css"
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://fernandoarag.github.io/parallax.min.js"></script>
+    <script src="https://fernandoarag.github.io/parallax.min.js"></script>    
   </head>
   <body>
     <!-- INICIO DO BLOCO 1 -->
@@ -76,7 +77,7 @@
               percebi que posso fazer mais e que precisava de um desafio maior, um novo mercado, 
               um novo idioma, uma nova area de atuação. Com o desejo de voltar o foco e 
               perseguir adentrar na área de desenvolvimento de sistemas, ao qual tive maior afinidade na minha graduação,
-              me voltei a estudos intensos em algumas linguagens de programação, técnicas e metodologias de 
+              me voltei a estudos intensos em algunas linguagens de programação, técnicas e metodologias de 
               desenvolvimento ágil e áreas afins.
             </h4>
     
@@ -218,7 +219,7 @@
     </div>
     <!-- INICIO DO BLOCO 3 -->
 
-    <!-- INICIO DO BLOCO 4 - (PROJETOS PUBLICADOS) -->
+    <!-- INICIO DO BLOCO 4 -->
     <div class="box-4_background">
       <div class="box-4 page-center" id='box-4'>
         <div class="box-4_container-main">
@@ -227,7 +228,7 @@
             <div class="box-4_container-child">
               <div class="box-4_img">
                 <img
-                  src="https://fernandoarag.github.io/assets/Projeto-01.svg"
+                  src="https://fernandoarag.github.io/assets/box-4_img_1.svg"
                   alt="Icone Quem sou eu"
                   srcset=""
                 />
@@ -280,6 +281,35 @@
 
         <div class="box-5_container right">
           <div class="box-5_container-form">
+
+            <?php 
+              if ($_POST) 
+              {
+                //Carrega as classes do PHPMailer
+                include("https://fernandoarag.github.io/phpmailer/class.phpmailer.php"); 
+                include("https://fernandoarag.github.io/phpmailer/class.smtp.php"); 
+                
+                //envia o e-mail para o visitante do site
+                $mailDestino = $_POST['txtEmail']; 
+                $nome = $_POST['txtNome'];	
+                $mensagem = "Obrigado pelo seu contato, responderemos ASAP!";
+                $assunto = "Obrigado pelo seu contato!";
+                include("https://fernandoarag.github.io/phpmailer/envio.php");
+                
+                //envia o e-mail para o administrador do site
+                $mailDestino = 'fernandorag.fullstackdeveloper@gmail.com'; 
+                $nome = 'Contato - Site';	
+                $assunto = "Mensagem - Formulário do Site";
+                $mensagem = "Recebemos uma mensagem no site <br/>
+                      <strong>Nome:</strong> $_POST[txtNome]<br/>
+                      <strong>e-mail:</strong> $_POST[txtEmail]<br/>
+                      <strong>mensagem:</strong> $_POST[txtMensagem]";
+                include("https://fernandoarag.github.io/phpmailer/envio.php");
+                
+                
+              }
+            ?>
+
             <form name="contact_form" class='box-5_form' method="POST">
               
               <div class='box-5_form-nome'>
@@ -312,11 +342,43 @@
               </div>
             </form>
           </div>
+
+          <div id="redeSociais" class="container_redes-sociais">
+      
+            <!-- TWITTER -->
+            <div class="row_redes-sociais" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i onclick="window.open('https://twitter.com/fernandoarag')" id="twitter" class="fab fa-twitter" aria-hidden="true"></i>
+            </div>  
+            
+            <!-- INSTAGRAM -->
+            <div class="row_redes-sociais" data-toggle="tooltip" data-placement="top" title="Instagram">
+              <i onclick="window.open('https://www.instagram.com/fernandoarag/')" id="instagram" class="fab fa-instagram" aria-hidden="true"></i>
+            </div>
+          
+            <!-- FACEBOOK -->
+            <div class="row_redes-sociais" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i onclick="window.open('https://www.facebook.com/fernandoarag')" id="facebook" class="fab fa-facebook-f" aria-hidden="true"></i>
+            </div>
+            
+            <!-- LINKEDIN -->
+            <div class="row_redes-sociais" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i onclick="window.open('https://www.linkedin.com/in/fernandoarag/')" id="linkedin" class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </div>
+      
+            <!-- WHATSAPP -->
+              <div class="row_redes-sociais" data-toggle="tooltip" data-placement="top" title="whatsapp">
+              <i onclick="window.open('https://api.whatsapp.com/send?1=pt_BR&phone=5538998413862')" id="whatsapp" class="fab fa-whatsapp" aria-hidden="true"></i>
+            </div>
+          
+          </div>
         </div>
       </div>
-      <div class='box-black'>asdasd</div>
+      <div class='box-black'></div>
     </div>
     <!-- FIM DO BLOCO 5 -->
+
+
+
     <script prepend src="_js/scripts.js"></script>
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7282976.js"></script>
