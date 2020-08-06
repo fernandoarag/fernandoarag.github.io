@@ -163,6 +163,11 @@ html {
   padding-left: 80px;
 }
 
+.box-2_container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .box-2_img {
 }
 .box-2_img img {
