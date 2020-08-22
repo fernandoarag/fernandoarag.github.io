@@ -467,7 +467,8 @@ input::-webkit-input-placeholder {
 input[type='submit'] {
   background-color: transparent;
   color: #ed1c24;
-  border: 3px solid transparent;
+  border-width: 3px;
+  border-style: solid;
   -moz-border-image: -moz-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   border-image: linear-gradient(to right, #ed1c24 0%, #f7931e 100%);
@@ -772,6 +773,9 @@ input[type='submit'] {
     font-weight: bold;
   }
 
+  .box-2_background {
+    background: rgba(230, 230, 230, 1);
+  }
   .box-2 {
     max-width: 1200px;
     display: flex;
@@ -829,6 +833,10 @@ input[type='submit'] {
   .box-3_flex-module_container_child.top img {
     min-width: 170px;
     width: 170px;
+  }
+
+  .box-4_background {
+    background: rgba(230, 230, 230, 1);
   }
 
   .box-4 {
