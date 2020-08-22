@@ -766,6 +766,7 @@ input[type='submit'] {
 
   .box-1_text .box-1_cta {
     text-align: center;
+    align-self: center !important;
   }
   .box-1_text .box-1_cta button {
     padding: 0.5rem 3rem;
