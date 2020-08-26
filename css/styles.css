@@ -213,7 +213,7 @@ nav ul li a:hover {
   padding: 10px 80px 10px 80px;
   font-size: 1.7em;
   cursor: pointer;
-  animation: animate 5s linear infinite;
+  /*animation: animate 5s linear infinite;*/
 }
 
 /********************************************************************/
@@ -561,7 +561,7 @@ input[type='submit'] {
 
   width: 100% !important;
   cursor: pointer;
-  animation: animate 5s linear infinite;
+  /*animation: animate 5s linear infinite;*/
 }
 
 .required_name,
