@@ -216,6 +216,10 @@ nav ul li a:hover {
   /*animation: animate 5s linear infinite;*/
 }
 
+.box-1_text .box-1_cta button:hover {
+  animation: animate 5s linear infinite;
+}
+
 /********************************************************************/
 /*                               BOX 2                              */
 /********************************************************************/
@@ -560,7 +564,10 @@ input[type='submit'] {
 
   width: 100% !important;
   cursor: pointer;
-  /*animation: animate 5s linear infinite;*/
+}
+
+input[type='submit']:hover {
+  animation: animate 5s linear infinite;
 }
 
 .required_name,
@@ -983,4 +990,4 @@ input[type='submit'] {
   .container_redes-sociais {
     justify-content: center;
   }
-}
+} 
