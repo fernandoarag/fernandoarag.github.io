@@ -32,7 +32,7 @@ html {
 
 a {
   text-decoration: none !important;
-} 
+}
 
 * {
   margin: 0;
@@ -208,6 +208,7 @@ a {
   padding: 10px 80px 10px 80px;
   font-size: 1.7em;
   cursor: pointer;
+  animation: animate 5s linear infinite;
 }
 
 /********************************************************************/
@@ -364,10 +365,12 @@ a {
   width: 100%;
   padding: 0px 15px 0px 15px;
   height: 8px;
+  animation: animate 5s linear infinite;
 }
 ::-webkit-progress-bar {
   background-color: #333333;
   border-radius: 15px;
+  animation: animate 5s linear infinite;
 }
 ::-webkit-progress-value {
   background-image: linear-gradient(to right, #ed1c24 0%, #f7931e 100%);
@@ -375,6 +378,7 @@ a {
   background-image: -webkit-linear-gradient(left, #ed1c24 0%, #f7931e 100%);
   background-image: linear-gradient(to right, #ed1c24 0%, #f7931e 100%);
   border-radius: 15px;
+  animation: animate 5s linear infinite;
 }
 
 /********************************************************************/
@@ -530,6 +534,7 @@ input[type='submit'] {
 
   width: 100% !important;
   cursor: pointer;
+  animation: animate 5s linear infinite;
 }
 
 .required_name,
