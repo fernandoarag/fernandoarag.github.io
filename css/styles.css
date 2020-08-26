@@ -1,6 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.13.1/css/all.css');
 
-/* IMPORTANDO FONTES */ 
+/* IMPORTANDO FONTES */
 @font-face {
   font-family: 'Poppins';
   src: url('https://f.hubspotusercontent30.net/hubfs/2961239/Landing-Page/biblioteca_v4/Fontes/Poppins-Regular.ttf')
@@ -28,6 +28,7 @@
 /********************************************************************/
 html {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* deixa a rolagem suave */ 
 }
 
 a {
@@ -58,7 +59,7 @@ a {
 }
 
 nav ul li a:hover {
-  filter: blur(2px);
+  filter: blur(1px);
   transition: all 0.5s;
 }
 
@@ -937,7 +938,7 @@ input[type='submit'] {
   }
 
   .box-5_container.left {
-    padding: 5%; 
+    padding: 5%;
   }
   .box-5_text h2 {
     font-size: 2em;
