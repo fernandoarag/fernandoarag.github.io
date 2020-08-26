@@ -615,7 +615,7 @@ input[type='submit'] {
 .container_redes-sociais {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(5, 26px);
+  grid-template-columns: repeat(4, 26px);
   column-gap: 3px;
   text-align: center;
   justify-content: flex-start;
