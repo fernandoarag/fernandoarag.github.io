@@ -15,6 +15,9 @@
     <script src="https://fernandoarag.github.io/parallax.min.js"></script>    
   </head>
   <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
     <!-- INICIO DO BLOCO 1 -->
     <div class="box-1_background">
       <div class="box-1" id='box-1'>
@@ -388,5 +391,15 @@
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7282976.js"></script>
     <!-- End of HubSpot Embed Code -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+      var progressbar = document.getElementById("progressbar");
+      var percent = document.getElementById("percent");
+
+      var totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        var progress = (window.pageYOffset / totalHeight) * 100;
+        progressbar.style.height = progress + "%";
+      }
+    </script>
   </body>
 </html>
