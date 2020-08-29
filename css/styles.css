@@ -79,7 +79,7 @@ nav ul li a:hover {
   right: 0;
   width: 10px;
   background: linear-gradient(to top, #ed1c24 0%, #f7931e 100%);
-  animation: animate 5s linear infinite;
+
   z-index: 999999999999;
   border-radius: 8px;
 }
